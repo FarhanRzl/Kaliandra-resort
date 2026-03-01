@@ -34,9 +34,6 @@ const HomeTypeCard: React.FC<HomeTypeCardProps> = ({
           height={250}
           className="w-full h-52 object-cover"
         />
-        <button className="absolute right-3 top-3 text-white bg-white/20 backdrop-blur-sm p-1.5 rounded-full">
-          <Heart className="w-5 h-5" />
-        </button>
       </div>
 
       <div className="p-4">
