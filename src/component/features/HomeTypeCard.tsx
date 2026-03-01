@@ -22,7 +22,7 @@ const HomeTypeCard: React.FC<HomeTypeCardProps> = ({
   image,
   bedrooms,
   features,
-  isBestPurchase = false,
+
 }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md w-full">
@@ -34,11 +34,6 @@ const HomeTypeCard: React.FC<HomeTypeCardProps> = ({
           height={250}
           className="w-full h-52 object-cover"
         />
-        {isBestPurchase && (
-          <div className="absolute left-0 bottom-4 bg-primary text-white px-3 py-1 rounded-r-md shadow-sm flex items-center">
-            <span className="text-xs font-medium">Best Purchase</span>
-          </div>
-        )}
         <button className="absolute right-3 top-3 text-white bg-white/20 backdrop-blur-sm p-1.5 rounded-full">
           <Heart className="w-5 h-5" />
         </button>
